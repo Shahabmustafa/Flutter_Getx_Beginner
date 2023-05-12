@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_getx_begginer/second_screen.dart';
 import 'package:get/get.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -46,30 +47,46 @@ class _HomeScreenState extends State<HomeScreen> {
               subtitle: const Text('What is you age'),
               onTap: (){
                 Get.bottomSheet(
-                  Container(
-                    color: Colors.red,
-                    child: Column(
-                      children: [
-                        ListTile(
-                          title: const Text('Light Theme'),
-                          leading: const Icon(Icons.light_mode),
-                          onTap: (){
-                            Get.changeTheme(ThemeData.light());
-                          },
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Container(
+                        color: Colors.red,
+                        child: Column(
+                          children: [
+                            ListTile(
+                              title: const Text('Light Theme'),
+                              leading: const Icon(Icons.light_mode),
+                              onTap: (){
+                                Get.changeTheme(ThemeData.light());
+                              },
+                            ),
+                            ListTile(
+                              title: const Text('Dark Theme'),
+                              leading: const Icon(Icons.dark_mode),
+                              onTap: (){
+                                Get.changeTheme(ThemeData.dark());
+                              },
+                            ),
+                          ],
                         ),
-                        ListTile(
-                          title: const Text('Dark Theme'),
-                          leading: const Icon(Icons.dark_mode),
-                          onTap: (){
-                            Get.changeTheme(ThemeData.dark());
-                          },
-                        ),
-                      ],
-                    ),
+                      ),
+                    ],
                   ),
                 );
               },
             ),
+          ),
+          Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              TextButton(
+                onPressed: (){
+                  Get.to(SecondPage());
+                },
+                child: const Text('Go to Second Page'),
+              ),
+            ],
           ),
 
         ],

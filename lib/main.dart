@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_getx_begginer/home_screen.dart';
+import 'package:flutter_getx_begginer/second_screen.dart';
+import 'package:flutter_getx_begginer/third_screen.dart';
 import 'package:get/get_navigation/get_navigation.dart';
 
 void main() {
@@ -18,7 +20,12 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: HomeScreen(),
+      // home: HomeScreen(),
+      getPages: [
+        GetPage(name: '/', page: () => HomeScreen()),
+        GetPage(name: '/secondscreen', page: () => SecondPage()),
+        GetPage(name: '/thirdscreen', page: () => ThiredScreen()),
+      ],
     );
   }
 }
