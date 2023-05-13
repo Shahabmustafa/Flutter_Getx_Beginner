@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_getx_begginer/home_screen.dart';
+import 'package:flutter_getx_begginer/languages.dart';
 import 'package:flutter_getx_begginer/second_screen.dart';
 import 'package:flutter_getx_begginer/third_screen.dart';
 import 'package:get/get_navigation/get_navigation.dart';
@@ -17,6 +18,9 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
+      translations: Languages(),
+      locale: const Locale('en_US'),
+      fallbackLocale: Locale('en_US'),
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
