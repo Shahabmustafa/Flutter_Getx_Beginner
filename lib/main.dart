@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_getx_begginer/State%20Mangement/counter.dart';
 import 'package:flutter_getx_begginer/home_screen.dart';
 import 'package:flutter_getx_begginer/languages.dart';
 import 'package:flutter_getx_begginer/second_screen.dart';
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
       ),
       // home: HomeScreen(),
       getPages: [
-        GetPage(name: '/', page: () => HomeScreen()),
+        GetPage(name: '/', page: () => CounterPage()),
         GetPage(name: '/secondscreen', page: () => SecondPage()),
         GetPage(name: '/thirdscreen', page: () => ThiredScreen()),
       ],
