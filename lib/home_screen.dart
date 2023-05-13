@@ -88,7 +88,12 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ],
           ),
-
+          Container(
+            width: Get.width * 0.3,
+            height: Get.height * 0.2,
+            color: Colors.red,
+            child: Center(child: Text('Media Query Getx',style: TextStyle(color: Colors.white),)),
+          ),
         ],
       ),
       floatingActionButton: FloatingActionButton(onPressed: (){
