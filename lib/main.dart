@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_getx_begginer/State%20Mangement/color_opacity_controller.dart';
 import 'package:flutter_getx_begginer/State%20Mangement/counter.dart';
 import 'package:flutter_getx_begginer/home_screen.dart';
 import 'package:flutter_getx_begginer/languages.dart';
 import 'package:flutter_getx_begginer/second_screen.dart';
 import 'package:flutter_getx_begginer/third_screen.dart';
 import 'package:get/get_navigation/get_navigation.dart';
+
+import 'State Mangement/color_opacity.dart';
 
 void main() {
   runApp(const MyApp());
@@ -27,7 +30,7 @@ class MyApp extends StatelessWidget {
       ),
       // home: HomeScreen(),
       getPages: [
-        GetPage(name: '/', page: () => CounterPage()),
+        GetPage(name: '/', page: () => ExampleTwo()),
         GetPage(name: '/secondscreen', page: () => SecondPage()),
         GetPage(name: '/thirdscreen', page: () => ThiredScreen()),
       ],
