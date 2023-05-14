@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_getx_begginer/State%20Mangement/color_opacity_controller.dart';
-import 'package:flutter_getx_begginer/State%20Mangement/counter.dart';
-import 'package:flutter_getx_begginer/State%20Mangement/example_three.dart';
-import 'package:flutter_getx_begginer/State%20Mangement/favourite_four_example.dart';
+import 'package:flutter_getx_begginer/State%20Mangement/Color%20Opasity/color_opacity_controller.dart';
+import 'package:flutter_getx_begginer/State%20Mangement/Counter/counter.dart';
+import 'package:flutter_getx_begginer/State%20Mangement/Image%20Picker/image_pick.dart';
+import 'package:flutter_getx_begginer/State%20Mangement/Swith%20Button/example_three.dart';
+import 'package:flutter_getx_begginer/State%20Mangement/Favourite/favourite_four_example.dart';
 import 'package:flutter_getx_begginer/home_screen.dart';
 import 'package:flutter_getx_begginer/languages.dart';
 import 'package:flutter_getx_begginer/second_screen.dart';
 import 'package:flutter_getx_begginer/third_screen.dart';
 import 'package:get/get_navigation/get_navigation.dart';
+import 'package:image_picker/image_picker.dart';
 
-import 'State Mangement/color_opacity.dart';
+import 'State Mangement/Color Opasity/color_opacity.dart';
 
 void main() {
   runApp(const MyApp());
@@ -32,7 +34,7 @@ class MyApp extends StatelessWidget {
       ),
       // home: HomeScreen(),
       getPages: [
-        GetPage(name: '/', page: () => Favourite()),
+        GetPage(name: '/', page: () => ImagePickerScreen()),
         GetPage(name: '/secondscreen', page: () => SecondPage()),
         GetPage(name: '/thirdscreen', page: () => ThiredScreen()),
       ],

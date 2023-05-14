@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_getx_begginer/State%20Mangement/counter_controller.dart';
+import 'package:flutter_getx_begginer/State%20Mangement/Counter/counter_controller.dart';
 import 'package:get/get.dart';
 
 

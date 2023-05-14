@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_getx_begginer/State%20Mangement/color_opacity_controller.dart';
+import 'package:flutter_getx_begginer/State%20Mangement/Color%20Opasity/color_opacity_controller.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 

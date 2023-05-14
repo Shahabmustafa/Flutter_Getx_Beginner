@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_getx_begginer/State%20Mangement/swith_controller.dart';
+import 'package:flutter_getx_begginer/State%20Mangement/Swith%20Button/swith_controller.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 
