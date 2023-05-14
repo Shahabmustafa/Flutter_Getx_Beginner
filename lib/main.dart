@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_getx_begginer/State%20Mangement/color_opacity_controller.dart';
 import 'package:flutter_getx_begginer/State%20Mangement/counter.dart';
 import 'package:flutter_getx_begginer/State%20Mangement/example_three.dart';
+import 'package:flutter_getx_begginer/State%20Mangement/favourite_four_example.dart';
 import 'package:flutter_getx_begginer/home_screen.dart';
 import 'package:flutter_getx_begginer/languages.dart';
 import 'package:flutter_getx_begginer/second_screen.dart';
@@ -31,7 +32,7 @@ class MyApp extends StatelessWidget {
       ),
       // home: HomeScreen(),
       getPages: [
-        GetPage(name: '/', page: () => ExampleThree()),
+        GetPage(name: '/', page: () => Favourite()),
         GetPage(name: '/secondscreen', page: () => SecondPage()),
         GetPage(name: '/thirdscreen', page: () => ThiredScreen()),
       ],
