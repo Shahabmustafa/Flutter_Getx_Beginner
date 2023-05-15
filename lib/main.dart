@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_getx_begginer/State%20Mangement/Api/login_in.dart';
 import 'package:flutter_getx_begginer/State%20Mangement/Color%20Opasity/color_opacity_controller.dart';
 import 'package:flutter_getx_begginer/State%20Mangement/Counter/counter.dart';
 import 'package:flutter_getx_begginer/State%20Mangement/Image%20Picker/image_pick.dart';
@@ -34,7 +35,7 @@ class MyApp extends StatelessWidget {
       ),
       // home: HomeScreen(),
       getPages: [
-        GetPage(name: '/', page: () => ImagePickerScreen()),
+        GetPage(name: '/', page: () => LoginPage()),
         GetPage(name: '/secondscreen', page: () => SecondPage()),
         GetPage(name: '/thirdscreen', page: () => ThiredScreen()),
       ],
